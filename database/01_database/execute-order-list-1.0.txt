@@ -1,0 +1,21 @@
+# tables
+
+
+# update scripts
+
+# views
+
+# indexes
+
+# functions
+
+# StoredProcedures
+
+
+# migration scripts
+
+# Scheduler Job
+
+# seed scripts
+
+# scripts for indexing

@@ -1,0 +1,16 @@
+DELIMITER //
+
+CREATE TABLE IF NOT EXISTS order_items (
+  id INT NOT NULL AUTO_INCREMENT,
+  order_id INT NOT NULL,
+  product_id INT NOT NULL,
+  quantity INT NOT NULL,
+  unit_price DECIMAL(10, 2) NOT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT NULL,
+  PRIMARY KEY (id),
+  CONSTRAINT fk_order_id FOREIGN KEY (order_id) REFERENCES orders(id),
+  CONSTRAINT fk_product_id FOREIGN KEY (product_id) REFERENCES products(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;//
+
+DELIMITER ;
