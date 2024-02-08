@@ -21,7 +21,7 @@ docker run --name mysql -p 3306:3306 -v mysql_volume:/var/lib/mysql/ -d -e "MYSQ
 
 docker exec -it mysql1 mysql -uroot -p
 
-create database hf_web3_db;
+create database _db;
 ```
 
 ```bash
@@ -29,7 +29,7 @@ create database hf_web3_db;
 NODE_ENV=development
 PORT=5000
 DB_CONFIG=local
-DATABASE_CONNECTION_PROFILE=ewogICJjb25uZWN0aW9uIjogewogICAgIm15c3FsIjogewogICAgICAiYXV0aGVudGljYXRpb24iOiB7CiAgICAgICAgIm1ldGhvZCI6ICJkaXJlY3QiLAogICAgICAgICJwYXNzd29yZCI6ICJWZXJ5U3Ryb25nUGFzc3dvcmRfMCIsCiAgICAgICAgInVzZXJuYW1lIjogInJvb3QxIgogICAgICB9LAogICAgICAiY2VydGlmaWNhdGUiOiB7CiAgICAgICAgImNlcnRpZmljYXRlX2F1dGhvcml0eSI6ICJzZWxmX3NpZ25lZCIsCiAgICAgICAgImNlcnRpZmljYXRlX2Jhc2U2NCI6ICIiLAogICAgICAgICJuYW1lIjogIjk5YzZiOTNjLWEzN2QtNDZkMS04N2I5LWRmMjdkNzEzNDg5NSIKICAgICAgfSwKICAgICAgImRhdGFiYXNlIjogImhmX3dlYjNfZGIiLAogICAgICAiaG9zdHMiOiBbCiAgICAgICAgewogICAgICAgICAgImhvc3RuYW1lIjogIjEyNy4wLjAuMSIsCiAgICAgICAgICAicG9ydCI6IDMzMDYKICAgICAgICB9CiAgICAgIF0KICAgIH0KICB9Cn0=
+DATABASE_CONNECTION_PROFILE=
 DATABASE_NAME=hf_web3_db
 
 ```
@@ -46,7 +46,7 @@ DATABASE_CONNECTION_PROFILE={
   "certification": {
     "certified_authority": "self_signed",
     "certificate_base64": "",
-    "name": "99c6b93c-a37d-46d1-87b9-df27d7134895"
+    "name": ""
   },
   "database": "hf_web3_db",
   "hosts": [
